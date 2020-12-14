@@ -4,56 +4,45 @@
 //
 //  Created by Thomas Lawless III on 12/9/20.
 //
-#include <iostream>
-#include <string>
+#include <iostream> 
+#include <iterator> 
+#include <map> 
 using namespace std;
 
 class Homework{
-public:
-    //setters
-    void setName(String assignName);
-    void setDueDate();
-    void setTimeComplete();
-    void setDateComplete();
-    void setGrade();
-    bool setCompleteAssign();
 private:
     String name;
-    //dateTime dueDate;
-    //dateTime timeComplete;
-    //dateTime dateComplete;
+    String dueDate;
+    String timeComplete;
+    String dateComplete;
     // need to make sure dateTime will be able to be searched and updated easily
-    double Grade;
+    double grade;
     bool completed = false;
-        
+
+public:
     //set the assignment name;
-    void Homework::setName(String studentName){
+     void Homework::setName(String studentName){
         name = studentName;
     }
-    
     //set the due date
-    void Homework::setDueDate(){
-        
+     void Homework::setDueDate(String due){
+        dueDate = due;
     }
-    
     //set the complete time
-    void Homework::setTimeComplete(){
-        
+     void Homework::setTimeComplete(Sring completeTime){
+         timeComplete = completeTime;
     }
-    
     //set the date complete
-    void Homework::setDateComplete(){
-        
+    void Homework::setDateComplete(String completeDate){
+        dateComplete = completeDate;
     }
-    
     //set the grade
-    void Homework::setGrade(){
-        
+    void Homework::setGrade(double g){
+        grade = g;
     }
-    
     //set if assignment was completed
-    void Homework::setCompleteAssign(){
-        
+    void Homework::setCompleteAssign(bool complete){
+        completed = complete;
     }
   
     
