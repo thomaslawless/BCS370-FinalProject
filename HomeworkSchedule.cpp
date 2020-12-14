@@ -15,14 +15,14 @@ class HomeworkSchedule: public Homework{
     }
     
 // update assignment
-    public void updateAssignment(){
-        
+    public void updateAssignment(Homework h, String name, String dueDate){
+        h.setName(name);
+        h.setDueDate(dueDate);
     }
 
 //complete an assignment
     public void completeAssignment(Homework h){
         h.setCompleteAssign(true);
-
     }
     
 // list total  number of assignments

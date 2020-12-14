@@ -21,8 +21,8 @@ private:
 
 public:
     //set the assignment name;
-     void Homework::setName(String studentName){
-        name = studentName;
+     void Homework::setName(String assignmentName){
+        name = assignmentName;
     }
     //set the due date
      void Homework::setDueDate(String due){
