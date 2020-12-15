@@ -12,7 +12,7 @@ using namespace std;
 class Homework{
 private:
     String name;
-    int dueDate;
+    int amountOfDaysUntilDue;
     String timeComplete;
    // String dateComplete;
     // need to make sure dateTime will be able to be searched and updated easily
@@ -26,7 +26,7 @@ public:
     }
     //set the due date
      void Homework::setDueDate(int due){
-        dueDate = due;
+        amountOfDaysUntilDue = due;
     }
     //set the complete time
      void Homework::setTimeComplete(Sring completeTime){
