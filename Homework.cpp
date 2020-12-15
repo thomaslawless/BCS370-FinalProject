@@ -16,6 +16,7 @@ private:
     String timeComplete;
    // String dateComplete;
     // need to make sure dateTime will be able to be searched and updated easily
+    
     double grade;
     bool completed = false;
 
