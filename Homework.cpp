@@ -29,7 +29,7 @@ public:
         amountOfDaysUntilDue = due;
     }
     //set the complete time
-     void Homework::setTimeComplete(Sring completeTime){
+     void Homework::setTimeComplete(String completeTime){
          timeComplete = completeTime;
     }
    // //set the date complete

@@ -42,4 +42,10 @@ class HomeworkSchedule: public Homework{
             cout << "The assignment exists";
         }
     }
+                              
+    public void checkdue(Homework h, int amountofDaysDue,int x){
+        if(amountofDaysDue<0) return;
+        cout<<"This is the total days for the assignment"<<amountofDaysDue;
+            checkdue(amountofDaysDue-x);
+}
 }
