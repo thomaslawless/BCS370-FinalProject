@@ -8,7 +8,7 @@
 #include <stdio.h>
 int main()
 {
-    val schedule -= new HomeworkSchedule("test","test");
+    val schedule = new HomeworkSchedule("test","test");
   
     std::cout << "Welcome to Homework Manager";
     std::cout << "Please select a function:";

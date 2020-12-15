@@ -12,9 +12,9 @@ using namespace std;
 class Homework{
 private:
     String name;
-    String dueDate;
+    int dueDate;
     String timeComplete;
-    String dateComplete;
+   // String dateComplete;
     // need to make sure dateTime will be able to be searched and updated easily
     double grade;
     bool completed = false;
@@ -25,16 +25,16 @@ public:
         name = assignmentName;
     }
     //set the due date
-     void Homework::setDueDate(String due){
+     void Homework::setDueDate(int due){
         dueDate = due;
     }
     //set the complete time
      void Homework::setTimeComplete(Sring completeTime){
          timeComplete = completeTime;
     }
-    //set the date complete
-    void Homework::setDateComplete(String completeDate){
-        dateComplete = completeDate;
+   // //set the date complete
+    //void Homework::setDateComplete(String completeDate){
+    //    dateComplete = completeDate;
     }
     //set the grade
     void Homework::setGrade(double g){

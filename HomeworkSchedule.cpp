@@ -11,7 +11,7 @@ class HomeworkSchedule: public Homework{
 //method to add a new assignment to the map
     public void addAssignment(string name, String dueDate){
         Homework newAssignment = new Homework(name, dueDate, null, null, null, false)
-        assignmentsMap.insert(newAssignment, id);
+        assignmentsMap.insert(std::make_pair(newAssignment, id);
     }
     
 // update assignment
@@ -30,9 +30,12 @@ class HomeworkSchedule: public Homework{
         return assignmentsMap.size();
     }
     
+    public void updateGrade(double grade){
+        h.setGrade(grade);
+    }
+    
     public void searchCourse(String search){
         it = assignmentsMap.find(search);
-        
         if (it == assignmentsMap.end()){
             cout << "Assignment does not exist";
         }else {
